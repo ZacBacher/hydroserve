@@ -606,13 +606,13 @@
     <form id="contact-form" class="contact-form" action="https://formspree.io/f/mnjobyaz" method="POST">
       <input type="hidden" name="_next" value="https://hydroserve.co.za/?success=true"/>
     <div class="form-row">
-      <div class="field"><label>First Name</label><input type="text" placeholder="Jane"/></div>
-      <div class="field"><label>Last Name</label><input type="text" placeholder="Smith"/></div>
+      <div class="field"><label>First Name</label><input type="text" name="first_name" placeholder="Jane" required/></div>
+      <div class="field"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith"/></div>
     </div>
-    <div class="field"><label>Email Address</label><input type="email" placeholder="jane@company.com"/></div>
+    <div class="field"><label>Email Address</label><input type="email" name="email" placeholder="jane@company.com" required/></div>
     <div class="field">
       <label>Property Type</label>
-      <select>
+      <select name="property_type">
         <option value="">Select one...</option>
         <option>Educational Institution</option>
         <option>Estate / Complex</option>
@@ -623,7 +623,7 @@
         <option>Other</option>
       </select>
     </div>
-    <div class="field"><label>Message</label><textarea placeholder="Tell us a bit about your property and what you're looking for..."></textarea></div>
+    <div class="field"><label>Message</label><textarea name="message" placeholder="Tell us a bit about your property and what you're looking for..." required></textarea></div>
     <button type="submit" class="btn-primary" style="width:100%;padding:1rem;font-size:1rem;border-radius:2px;cursor:pointer;">Send My Enquiry</button>
   </form>
 </section>
